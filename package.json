@@ -28,11 +28,12 @@
   },
   "lint-staged": {
     "*.{js,css,md,ts,sol}": "forge fmt",
-    "(src|script)/**/*.sol": "yarn lint:sol-logic",
-    "test/**/*.sol": "yarn lint:sol-tests",
+    "X(src|script)/**/*.sol": "yarn lint:sol-logic",
+    "Xtest/**/*.sol": "yarn lint:sol-tests",
     "package.json": "sort-package-json"
   },
   "dependencies": {
+    "@graphprotocol/graph-cli": "^0.69.2",
     "isolmate": "github:defi-wonderland/isolmate#59e1804"
   },
   "devDependencies": {
